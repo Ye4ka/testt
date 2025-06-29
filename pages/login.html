@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Турагентство</title>
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="логотип" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./about.html">О компании</a></li>
+                    <li><a href="./login.html" class="active">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-form">
+                    <h2>Вход в личный кабинет</h2>
+                    <p class="form-subtitle">Войдите в свой аккаунт для доступа к личному кабинету</p>
+                    
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span class="checkmark">Запомнить меня</span>
+                            </label>
+                        </div>
+                        
+                        <button class="btn-submit" type="button" onclick="window.location.href='profile.html'">Войти</button>
+                    </form>
+                    
+                    <div class="form-footer">
+                        <p>Нет аккаунта? <a href="./register.html">Зарегистрироваться</a></p>
+                        <p><a href="#" class="forgot-password">Забыли пароль?</a></p>
+                    </div>
+                </div>
+                
+                <div class="side-info">
+                    <div class="side-info-content">
+                        <h3>Добро пожаловать!</h3>
+                        <p>Войдите в свой аккаунт, чтобы получить доступ к персональным предложениям и управлению бронированиями.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="company-info">
+                <h3>Турагентство</h3>
+                <p>Организуем незабываемые путешествия по всему миру.<br>Ваш комфорт и впечатления - наш приоритет!</p>
+            </div>
+            <div class="footer__nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./about.html">О компании</a></li>
+                    <li><a href="./login.html">Войти</a></li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <h4>Контакты</h4>
+                <p>+7 (495) 123-45-67</p>
+                <p>Email: info@turagentstvo.ru</p>
+                <p>Адрес: Москва, ул. Туристическая, 123</p>
+                <p>Время работы: Пн-Пт 9:00-20:00, Сб-Вс 10:00-18:00</p>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-line"></div>
+                <p class="footer__copyright-text">&copy; 2025 Турагентство. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

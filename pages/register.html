@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Турагентство</title>
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.png" alt="логотип" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./about.html">О компании</a></li>
+                    <li><a href="./login.html" class="active">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="register-container">
+                <div class="register-form">
+                    <h2>Создать аккаунт</h2>
+                    <p class="form-subtitle">Зарегистрируйтесь, чтобы получить доступ к личному кабинету</p>
+                    
+                    <form class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Имя</label>
+                                <input type="text" name="firstName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Фамилия</label>
+                                <input type="text" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password"  name="password" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword">Подтвердите пароль</label>
+                                <input type="password" name="confirmPassword" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                Я согласен с <a href="#" class="terms-link">условиями использования</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span class="checkmark">Подписаться на новости и специальные предложения</span>
+                            </label>
+                        </div>
+                        
+                        <button class="btn-submit"  type="button" onclick="window.location.href='login.html'">Зарегистрироваться</button>
+                    </form>
+                    
+                    <div class="form-footer">
+                        <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                    </div>
+                </div>
+                
+                <div class="register-info">
+                    <div class="info-overlay">
+                        <h3>Присоединяйтесь к нам!</h3>
+                        <p>Создайте аккаунт и получите доступ к эксклюзивным предложениям, персональным рекомендациям и удобному управлению бронированиями.</p>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <span class="benefit-title">Персональные предложения</span>
+                                <span class="benefit-text">Индивидуальный подбор туров для вас</span>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-title">Бонусная программа</span>
+                                <span class="benefit-text">Копите баллы и получайте подарки</span>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-title">Удобное управление</span>
+                                <span class="benefit-text">Все бронирования под контролем</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="company-info">
+                <h3>Турагентство</h3>
+                <p>Организуем незабываемые путешествия по всему миру.<br>Ваш комфорт и впечатления - наш приоритет!</p>
+            </div>
+            <div class="footer__nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="./about.html">О компании</a></li>
+                    <li><a href="./login.html">Войти</a></li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <h4>Контакты</h4>
+                <p>+7 (495) 123-45-67</p>
+                <p>Email: info@turagentstvo.ru</p>
+                <p>Адрес: Москва, ул. Туристическая, 123</p>
+                <p>Время работы: Пн-Пт 9:00-20:00, Сб-Вс 10:00-18:00</p>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-line"></div>
+                <p class="footer__copyright-text">&copy; 2025 Турагентство. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
