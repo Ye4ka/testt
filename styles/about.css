@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: rgb(51, 51, 51);
+    background-color: white;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    background: rgb(106, 114, 217);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* Main */
+
+.about-hero {
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    color: white;
+    text-align: center;
+    padding: 64px 0;
+    margin-bottom: 48px;
+    border-radius: 20px;
+}
+
+.about-hero__title {
+    font-size: 48px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.about-hero__subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.about-content {
+    background: white;
+    border-radius: 15px;
+    padding: 48px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
+}
+
+.about-text h2 {
+    color: rgb(44, 62, 80);
+    font-size: 28px;
+    margin: 32px 0 16px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-text h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 25px;
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    border-radius: 2px;
+}
+
+.about-text h2:first-child {
+    margin-top: 0;
+}
+
+.about-text p {
+    margin-bottom: 24px;
+    line-height: 1.8;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+
+.about-text ul {
+    margin: 24px 0;
+    padding-left: 32px;
+}
+
+.about-text li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: rgb(68, 68, 68);
+}
+
+.about-text strong {
+    color: rgb(44, 62, 80);
+}
+
+.contact-info {
+    background: rgb(248, 249, 250);
+    padding: 32px;
+    border-radius: 10px;
+    border-left: 4px solid rgb(102, 126, 234);
+}
+
+.contact-info p {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.contact-info strong {
+    color: rgb(44, 62, 80);
+}
+
+/* footer */
+
+.footer {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: left;
+    padding: 48px 0 16px 0;
+    margin-top: 50px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.company-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.company-info p {
+    opacity: 0.8;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.footer__nav h4, .footer__contacts h4 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.footer__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__nav li {
+    margin-bottom: 8px;
+}
+.footer__nav a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+.footer__nav a:hover {
+    color: white;
+    opacity: 1;
+}
+.footer__contacts p {
+    margin-bottom: 8px;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.footer__copyright{
+    margin-top: 10px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__copyright-line{
+    height: 1px;
+    background-color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+}
+
+.footer__copyright-text{
+    text-align: center;
+}

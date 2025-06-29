@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: rgb(51, 51, 51);
+    background-color: white;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    background: rgb(106, 114, 217);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo-img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+
+/* Главная секция */
+.main {
+    padding: 32px 0;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.profile-header h1 {
+    font-size: 40px;
+    color: rgb(44, 62, 80);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.profile-header p {
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+}
+
+.profile-content {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-sidebar {
+    background: white;
+    border-radius: 15px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 120px;
+    min-width: 300px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgb(225, 232, 237);
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+    border: 4px solid rgb(102, 126, 234);
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info h3 {
+    font-size: 20px;
+    color: rgb(44, 62, 80);
+    margin-bottom: 8px;
+}
+
+.user-email,
+.user-phone {
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.btn-edit:hover {
+    transform: translateY(-2px);
+}
+
+.profile-nav ul {
+    list-style: none;
+}
+
+.profile-nav li {
+    margin-bottom: 8px;
+}
+
+.profile-nav a {
+    display: block;
+    padding: 16px;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.profile-nav a:hover,
+.profile-nav a.active {
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    color: white;
+}
+
+.profile-main {
+    min-width: 0;
+    background: white;
+    border-radius: 15px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-section h2 {
+    font-size: 28px;
+    color: rgb(44, 62, 80);
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.stat-card {
+    margin: 0 auto;
+    background: rgb(248, 249, 250);
+    border-radius: 12px;
+    padding: 24px;
+    width: 290px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgb(225, 232, 237);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stat-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(106, 114, 217);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(44, 62, 80);
+}
+
+.current-tour h3 {
+    font-size: 24px;
+    color: rgb(44, 62, 80);
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.tour-card-large {
+    display: flex;
+    flex-direction: column;
+    background: rgb(248, 249, 250);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgb(225, 232, 237);
+}
+
+.tour-card-large img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.tour-details {
+    padding: 32px;
+}
+
+.tour-details h4 {
+    font-size: 24px;
+    color: rgb(44, 62, 80);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.tour-description {
+    color: rgb(68, 68, 68);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.tour-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.tour-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(225, 232, 237);
+}
+
+.info-label {
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+}
+
+.info-value {
+    font-weight: bold;
+    color: rgb(44, 62, 80);
+}
+
+.status-confirmed {
+    color: rgb(39, 174, 96);
+}
+
+.tour-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 2px solid rgb(225, 232, 237);
+    margin-bottom: 12px;
+}
+
+.price-label {
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+}
+
+.price-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(231, 76, 60);
+}
+
+.tour-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+    color: white;
+}
+
+.btn-secondary {
+    background: rgb(248, 249, 250);
+    color: rgb(68, 68, 68);
+    border: 1px solid rgb(225, 232, 237);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: left;
+    padding: 48px 0 16px 0;
+    margin-top: 50px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.company-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.company-info p {
+    opacity: 0.8;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.footer__nav h4, .footer__contacts h4 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+.footer__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__nav li {
+    margin-bottom: 8px;
+}
+.footer__nav a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+.footer__nav a:hover {
+    color: white;
+    opacity: 1;
+}
+.footer__contacts p {
+    margin-bottom: 8px;
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.footer__copyright{
+    margin-top: 10px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__copyright-line{
+    height: 1px;
+    background-color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+}
+
+.footer__copyright-text{
+    text-align: center;
+}
